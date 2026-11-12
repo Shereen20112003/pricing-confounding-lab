@@ -1,0 +1,291 @@
+{
+  "schema_version": 1,
+  "environment": {
+    "python": "3.12.10",
+    "numpy": "2.5.4"
+  },
+  "config": {
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "n_train": 500,
+    "n_test": 400,
+    "price_grid": [
+      4.0,
+      4.5,
+      5.0,
+      5.5,
+      6.0,
+      6.5,
+      7.0,
+      7.5,
+      8.0,
+      8.5,
+      9.0,
+      9.5,
+      10.0,
+      10.5,
+      11.0,
+      11.5,
+      12.0,
+      12.5,
+      13.0,
+      13.5,
+      14.0,
+      14.5,
+      15.0,
+      15.5,
+      16.0,
+      16.5,
+      17.0,
+      17.5,
+      18.0,
+      18.5,
+      19.0,
+      19.5,
+      20.0,
+      20.5,
+      21.0,
+      21.5,
+      22.0,
+      22.5,
+      23.0,
+      23.5,
+      24.0
+    ],
+    "radius": 2
+  },
+  "data": "synthetic; no real retail transactions",
+  "runs": [
+    {
+      "seed": 0,
+      "coefficients": {
+        "naive": [
+          40.13497948487972,
+          1.132582962972326
+        ],
+        "adjusted": [
+          92.13794120849828,
+          -3.1833289554377973,
+          25.305985109311575
+        ]
+      },
+      "policies": {
+        "naive": {
+          "iid": {
+            "expected_revenue": 416.7751904513472,
+            "oracle_regret": 258.3387191057903,
+            "mean_price": 24.0
+          },
+          "context_shift": {
+            "expected_revenue": 1314.936815474861,
+            "oracle_regret": 28.5897591823276,
+            "mean_price": 24.0
+          }
+        },
+        "adjusted": {
+          "iid": {
+            "expected_revenue": 674.2862922071974,
+            "oracle_regret": 0.8276173499402932,
+            "mean_price": 14.3075
+          },
+          "context_shift": {
+            "expected_revenue": 1342.5563747797403,
+            "oracle_regret": 0.9701998774481194,
+            "mean_price": 20.56375
+          }
+        },
+        "adjusted_pessimistic": {
+          "iid": {
+            "expected_revenue": 672.3125221492202,
+            "oracle_regret": 2.8013874079173022,
+            "mean_price": 13.86625
+          },
+          "context_shift": {
+            "expected_revenue": 1341.4520730818099,
+            "oracle_regret": 2.0745015753784575,
+            "mean_price": 20.30125
+          }
+        },
+        "fixed": {
+          "iid": {
+            "expected_revenue": 659.9056303238001,
+            "oracle_regret": 15.208279233337473,
+            "mean_price": 15.0
+          },
+          "context_shift": {
+            "expected_revenue": 1226.835509671788,
+            "oracle_regret": 116.6910649854004,
+            "mean_price": 15.0
+          }
+        },
+        "oracle": {
+          "iid": {
+            "expected_revenue": 675.1139095571375,
+            "oracle_regret": 0.0,
+            "mean_price": 14.84125
+          },
+          "context_shift": {
+            "expected_revenue": 1343.5265746571883,
+            "oracle_regret": 0.0,
+            "mean_price": 21.15
+          }
+        }
+      }
+    },
+    {
+      "seed": 1,
+      "coefficients": {
+        "naive": [
+          41.426906150928296,
+          1.0372817036151003
+        ],
+        "adjusted": [
+          91.76542170516063,
+          -3.132360045820329,
+          24.85410064967855
+        ]
+      },
+      "policies": {
+        "naive": {
+          "iid": {
+            "expected_revenue": 459.8224099724268,
+            "oracle_regret": 243.51370585884624,
+            "mean_price": 24.0
+          },
+          "context_shift": {
+            "expected_revenue": 1291.7787137167686,
+            "oracle_regret": 31.33428585324762,
+            "mean_price": 24.0
+          }
+        },
+        "adjusted": {
+          "iid": {
+            "expected_revenue": 702.972755922452,
+            "oracle_regret": 0.36335990882094094,
+            "mean_price": 14.77875
+          },
+          "context_shift": {
+            "expected_revenue": 1322.6644375808219,
+            "oracle_regret": 0.4485619891941059,
+            "mean_price": 20.58125
+          }
+        },
+        "adjusted_pessimistic": {
+          "iid": {
+            "expected_revenue": 701.377075017585,
+            "oracle_regret": 1.959040813688077,
+            "mean_price": 14.32
+          },
+          "context_shift": {
+            "expected_revenue": 1321.6333305687303,
+            "oracle_regret": 1.4796690012857276,
+            "mean_price": 20.2675
+          }
+        },
+        "fixed": {
+          "iid": {
+            "expected_revenue": 686.5771108042218,
+            "oracle_regret": 16.759005027051245,
+            "mean_price": 15.0
+          },
+          "context_shift": {
+            "expected_revenue": 1212.3616960729803,
+            "oracle_regret": 110.7513034970358,
+            "mean_price": 15.0
+          }
+        },
+        "oracle": {
+          "iid": {
+            "expected_revenue": 703.3361158312729,
+            "oracle_regret": 0.0,
+            "mean_price": 15.13375
+          },
+          "context_shift": {
+            "expected_revenue": 1323.1129995700164,
+            "oracle_regret": 0.0,
+            "mean_price": 20.9775
+          }
+        }
+      }
+    },
+    {
+      "seed": 2,
+      "coefficients": {
+        "naive": [
+          42.28089066974483,
+          0.9956350908926762
+        ],
+        "adjusted": [
+          92.19947281228373,
+          -3.163667060592051,
+          25.13122643317161
+        ]
+      },
+      "policies": {
+        "naive": {
+          "iid": {
+            "expected_revenue": 452.93612578295136,
+            "oracle_regret": 245.37913574627208,
+            "mean_price": 24.0
+          },
+          "context_shift": {
+            "expected_revenue": 1281.3543089377072,
+            "oracle_regret": 32.84315312187901,
+            "mean_price": 24.0
+          }
+        },
+        "adjusted": {
+          "iid": {
+            "expected_revenue": 697.7758818548781,
+            "oracle_regret": 0.5393796743452728,
+            "mean_price": 14.6575
+          },
+          "context_shift": {
+            "expected_revenue": 1313.5472754731254,
+            "oracle_regret": 0.6501865864608061,
+            "mean_price": 20.4325
+          }
+        },
+        "adjusted_pessimistic": {
+          "iid": {
+            "expected_revenue": 696.0390348940626,
+            "oracle_regret": 2.2762266351607536,
+            "mean_price": 14.21125
+          },
+          "context_shift": {
+            "expected_revenue": 1312.6631911912468,
+            "oracle_regret": 1.5342708683390311,
+            "mean_price": 20.18375
+          }
+        },
+        "fixed": {
+          "iid": {
+            "expected_revenue": 682.3438292415667,
+            "oracle_regret": 15.971432287656745,
+            "mean_price": 15.0
+          },
+          "context_shift": {
+            "expected_revenue": 1205.8464430860668,
+            "oracle_regret": 108.35101897351915,
+            "mean_price": 15.0
+          }
+        },
+        "oracle": {
+          "iid": {
+            "expected_revenue": 698.3152615292233,
+            "oracle_regret": 0.0,
+            "mean_price": 15.0825
+          },
+          "context_shift": {
+            "expected_revenue": 1314.1974620595859,
+            "oracle_regret": 0.0,
+            "mean_price": 20.905
+          }
+        }
+      }
+    }
+  ]
+}
